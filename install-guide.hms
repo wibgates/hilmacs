@@ -1,0 +1,40 @@
+    //install runtime services for hilmacs
+	
+	Service 1 : Mongo db
+	Service 2 : Hilmacs Mother Pod
+	
+	 SERVICE 1
+  
+     OPEN CMD : {IN ADMIN }
+
+     STEP 1 :
+     ## This will remove the existing MongoDB service (if any).
+     >>> mongod --remove
+
+     ## Install service as
+     >>> mongod --dbpath "C:\data\db" --logpath "C:\Program Files\MongoDB\Server\3.4\bin\mongod.log" --install --serviceName "Hilmacs Server"
+   
+     ## Open services 
+     >>> services.msc
+	 
+	 SERVICE 2
+  
+     OPEN CMD : {IN ADMIN }
+
+     STEP 1 :
+     >>> C:\demon\hilmacs>npm i -g qckwinsvc
+     >>> C:\demon\hilmacs>ckwinsvc
+	 >>> Service Name : Hilmacs Mother Pod
+	 >>> App Path : C:\demon\hilmacs\app.js
+	 >>> Tills Last Step <<<<<
+	 Type yes to start service
+
+ 
+ 
+ 
+     /////////// INSTALLING MONGO
+     AFTER INSTALLATION 
+     STEP 1 : CREATE DIR data on c:\
+  
+     ## Used in data storage of documents
+     >>> C:\data\db

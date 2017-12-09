@@ -1,0 +1,44 @@
+{
+  "name": "hilmacs",
+  "version": "1.0.5",
+  "description": "Hilmacs Intel Managemnet System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hilmacs"
+  ],
+  "author": "Wibgates Kenneth The Great",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "bower": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "forever": "*",
+    "forever-monitor": "*",
+    "jquery": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "multer": "^1.3.0",
+    "mysql": "^2.13.0",
+    "nodemon": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "stripe": "^5.1.1"
+  },
+  "devDependencies": {
+    "electron": "^1.7.8"
+  }
+}
