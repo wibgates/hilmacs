@@ -11,7 +11,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 const electron = require('electron');
-mongoose.connect('mongodb://localhost/hilmacs');
+mongoose.connect('mongodb://http://live.hilmacs.com/hilmacs');
 var db = mongoose.connection;
 
 // wibgates prefers mysql but let me go with NOSQL {hilmacsNosql}
@@ -126,7 +126,7 @@ app.use('/sessions',logging);
 app.use('/setup', setup);
 
 // Set Port
-app.set('port',(process.env.PORT || 80 ));
+app.set('port',(process.env.PORT || 8080 ));
 
 app.listen(app.get('port'), () => {
   console.log('Hilmacs Server started on port '+app.get('port'));
