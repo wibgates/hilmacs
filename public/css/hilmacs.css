@@ -1,0 +1,26 @@
+/*
+Copyright (c) 2017 HILMACS Inc.
+------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:	Advanced Intel Management System
+Version:	2.0.0
+Author : Wibgates Kenneth The Great @wifigates. fb:wibgates
+-------------------------------------------------------------------*/
+@import url("wprim/bootstrap.css");
+@import url("wprim/hilmacs.app.css");
+@import url("wprim/fonts/font-awesome.css");
+@import url("wprim/fonts/font-awesome.css");
+@import url("wprim/fonts/font-awesome.min.css");
+@import url("wprim/fonts/material-design-icons.css");
+/*--- lets animate ka little  ---*/
+@import url("wprim/animate.css");
+@import url("wprim/waves.css");
+@import url("wprim/hilmacs.min.css");
+/*--- lets style our graphs ---*/
+@import url("wprim/graph/morris.css");
+/*--- lets import some  ---*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+@import url("http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js");

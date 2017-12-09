@@ -1,0 +1,556 @@
+/*
+   Hilmacs Master Custom CSS
+   Copyright  Hilmacs Inc. 2017
+   Auhtor : Wibgates Kenneth The Great
+*/
+
+
+/* text color */
+.whiteText{
+  color: white ;
+}
+
+.greenText{
+  color: green ;
+}
+
+
+.redText{
+  color: red ;
+}
+
+.blueText{
+  color: blue ;
+}
+
+
+.yellowText{
+  color: yellow;
+}
+
+/* set font size*/
+.s-12{
+  font-size: 12px ;
+}
+
+.s-14{
+  font-size: 14px ;
+}
+
+.s-16{
+  font-size: 16px ;
+}
+
+.s-18{
+  font-size: 18px ;
+}
+
+.s-20{
+  font-size: 20px ;
+}
+
+.s-22{
+  font-size: 22px ;
+}
+
+.s-24{
+  font-size: 24px ;
+}
+
+.s-26{
+  font-size: 26px ;
+}
+/* borders */
+.bd-red{
+   border-color: red  !important;
+}
+
+.hm-a1{
+  margin-top: 2.5% ;
+}
+
+.hm-text-noresize{
+  resize:none;
+}
+
+/* set margins*/
+.margin-1{
+  margin-left:1%;
+}
+
+.margin-2{
+  margin-left:2%;
+}
+
+.margin-3{
+  margin-left:3%;
+}
+
+.margin-4{
+  margin-left:4%;
+}
+
+.margin-5{
+  margin-left:5%;
+}
+
+.margin-10{
+  margin-left:10% !important;
+}
+
+.margin-20{
+  margin-left:20% !important;
+}
+
+.margin-30{
+  margin-left:30% !important;
+}
+
+.margin-40{
+  margin-left:40% !important;
+}
+
+.margin-50{
+  margin-left:50% !important;
+}
+
+.margin-60{
+  margin-left:60% !important;
+}
+
+.margin-70{
+  margin-left:70% !important;
+}
+
+.margin-80{
+  margin-left:80% !important;
+}
+
+.margin-p10{
+  margin-left:100px !important;
+}
+
+.margin-p14{
+  margin-left:140px !important;
+}
+
+.margin-p16{
+  margin-left:160px !important;
+}
+.margin-p17{
+  margin-left:170px !important;
+}
+.margin-p18{
+  margin-left:180px !important;
+}
+.margin-p20{
+  margin-left:200px !important;
+}
+
+.margin-p30{
+  margin-left:300px !important;
+}
+
+.margin-p40{
+  margin-left:400px !important;
+}
+
+.margin-p42{
+  margin-left:420px !important;
+}
+
+.margin-p45{
+  margin-left:450px !important;
+}
+
+.margin-p50{
+  margin-left:500px !important;
+}
+.margin-p52{
+  margin-left:520px !important;
+}
+.margin-p54{
+  margin-left:540px !important;
+}
+.margin-p56{
+  margin-left:560px !important;
+}
+.margin-p58{
+  margin-left:580px !important;
+}
+
+.margin-p60{
+  margin-left:600px !important;
+}
+
+.margin-p62{
+  margin-left:620px !important;
+}
+
+.margin-p65{
+  margin-left:650px !important;
+}
+.margin-p66{
+  margin-left:660px !important;
+}
+.margin-p67{
+  margin-left:670px !important;
+}
+.margin-p68{
+  margin-left:680px !important;
+}
+
+.margin-p70{
+  margin-left:700px !important;
+}
+
+.margin-p72{
+  margin-left:720px !important;
+}
+.margin-p74{
+  margin-left:740px !important;
+}
+.margin-p76{
+  margin-left:760px !important;
+}
+
+.margin-p80{
+  margin-left:800px !important;
+}
+
+.h-sm-30{
+  margin-top: -30px !important ;
+}
+
+.margin-t10{
+  margin-top: -10px !important ;
+}
+
+.margin-t20{
+  margin-top: -20px !important ;
+}
+
+.margin-t30{
+  margin-top: -30px !important ;
+}
+
+.margin-t40{
+  margin-top: -40px !important ;
+}
+
+.margin-t50{
+  margin-top: -50px !important ;
+}
+
+.margin-t60{
+  margin-top: -60px !important ;
+}
+
+.margin-t70{
+  margin-top: -70px !important ;
+}
+
+.margin-t80{
+  margin-top: -80px !important ;
+}
+
+.margin-t90{
+  margin-top: -90px !important ;
+}
+
+.margin-t100{
+  margin-top: -100px !important ;
+}
+
+.margin-t120{
+  margin-top: -120px !important ;
+}
+
+.margin-t125{
+  margin-top: -125px !important ;
+}
+
+.margin-t130{
+  margin-top: -130px !important ;
+}
+
+.margin-t135{
+  margin-top: -135px !important ;
+}
+
+.margin-t140{
+  margin-top: -140px !important ;
+}
+
+.margin-t145{
+  margin-top: -145px !important ;
+}
+
+/* search bars */
+.hm-searchBar-top{
+   background: rgba(0, 0, 0, 0.22);
+   margin-top:.5% !important;
+   border-radius:2%;
+   left: -80px !important ;
+}
+
+/* hilmacs input feilds  */
+.hm-inpt-placeholder::-webkit-input-placeholder {
+    color: #fff ;
+}
+
+.hm-inpt-search-top{
+  padding-left: 4% !important ;
+  text-align: left;
+}
+
+.hm-inpt-search-top-icon{
+  position: absolute;
+  margin-top: 1.5%;
+  cursor: pointer;
+  margin-left:;
+}
+
+.hm-nav-bar-top-sandwich{
+  position: absolute;
+  margin-top: 1.25%;
+  cursor: pointer;
+  margin-left:1%;
+}
+
+
+.hm-nav-bar-top-label{
+  margin-left: 30px !important;
+}
+
+.hm-inpt-modal-a1{
+  font-family: sans-serif;
+  font-size: 18px ;
+}
+
+.hm-data-a-auto-save{
+  margin-right: 17.5%;
+  margin-top: -1%;
+}
+
+.navbar {
+   height: 56px !important;
+   min-height: 56px !important;
+}
+
+.list-group-item{
+  padding: 9px !important;
+}
+
+.form-group label{
+  font-weight: bold;
+}
+
+.form-group option{
+  text-transform: capitalize;
+}
+
+.reg-header{
+  text-decoration-style: dotted;
+}
+
+.zx-1{ z-index:-1; }
+.zx-2{ z-index:-2; }
+.zx-3{ z-index:-3; }
+.zx-4{ z-index:-4; }
+.zx-5{ z-index:-5; }
+.zx-6{ z-index:-6; }
+.zx-7{ z-index:-7; }
+.zx-8{ z-index:-8; }
+.zx-9{ z-index:-9; }
+.zx-10{ z-index:-10; }
+
+.zx1{ z-index:1; }
+.zx2{ z-index:2; }
+.zx3{ z-index:3; }
+.zx4{ z-index:4; }
+.zx5{ z-index:5; }
+.zx6{ z-index:6; }
+.zx7{ z-index:7; }
+.zx8{ z-index:8; }
+.zx9{ z-index:9; }
+.zx10{ z-index:10; }
+
+.day-light{
+  background-color: #ddfffc !important ;
+}
+.day-break-light{
+  background-color: #f1ffb1 !important ;
+}
+
+.dawn-light{
+  background-color: #ffc390 !important ;
+}
+
+.day-light-moon{
+  background-color: #ffddfa !important ;
+}
+
+.time-slot{
+  background-color: rgb(224, 79, 103) !important;
+}
+
+.redColor{
+	color:red;
+}
+.greenColor{
+	color:green;
+}
+.yellowColor{
+	color:yellow;
+}
+.blueColor{
+	color:blue;
+}
+.orangekColor{
+	color:orange;
+}
+.purpleColor{
+	color:purple;
+}
+
+.rotate90{
+     -webkit-transform: rotate(-90deg);
+	 -ff-transform: rotate(-90deg);
+	 transform: rotate(-90deg);
+}
+.rotate60{
+     -webkit-transform: rotate(-60deg);
+	 -ff-transform: rotate(-60deg);
+	 transform: rotate(-60deg);
+}
+.rotate50{
+     -webkit-transform: rotate(-50deg);
+	 -ff-transform: rotate(-50deg);
+	 transform: rotate(-50deg);
+}
+.rotate45{
+     -webkit-transform: rotate(-45deg);
+	 -ff-transform: rotate(-45deg);
+	 transform: rotate(-45deg);
+}
+.rotate35{
+     -webkit-transform: rotate(-35deg);
+	 -ff-transform: rotate(-35deg);
+	 transform: rotate(-35deg);
+}
+.rotate20{
+     -webkit-transform: rotate(-20deg);
+	 -ff-transform: rotate(-20deg);
+	 transform: rotate(-20deg);
+}
+
+.strtoupper{
+	 text-transform: uppercase;
+}
+.strtolower{
+	 text-transform: lowercase;
+}
+.ucwords{
+	 text-transform: capitalize;
+}
+.uldouble{
+	 border-bottom: 1px double #000;
+}
+.ulsolid2{
+	 border-bottom: 2px solid #000;
+}
+.ulsolid3{
+	 border-bottom: 3px solid #000;
+}
+.cursorpon{
+	 cursor:pointer;
+}
+
+.bg-f8{
+   background: #f8f8f8 !important;
+}
+
+.hx-r{
+  border: 1px solid #eee;
+  border-bottom: none ;
+  border-left: none ;
+  border-top: none ;
+}
+
+.hx-l{
+  border: 1px solid #eee;
+  border-bottom: none ;
+  border-right: none ;
+  border-top: none ;
+}
+
+/* hilmacs tables*/
+.table-bordered, .table-bordered td {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+    line-height: 20px !important;
+}
+
+.gtr{
+    padding-bottom: 2.5px !important;
+    padding-top: 2.5px !important;
+    line-height: 10px !important;
+    font-weight: bold !important;
+}
+.padding-10{
+  padding: 10px !important;
+}
+
+.panel-body {
+    padding: 10px 18px !important;
+}
+
+.hm-nav-bar-aside{
+  margin-left: -20px !important ;
+  width: 300px !important ;
+  /*font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;*/
+  -webkit-font-smoothing: antialiased !important;
+}
+.pad-12{
+    padding-top: 12px !important;
+}
+
+.custom-tr{
+    color:rgba(0, 0, 0, 0.87);
+    display:table-cell;
+    font-family:Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:14px;
+    font-weight:700;
+    margin-top: 70px !important;
+    top: inherit;
+    padding-top: inherit;
+    padding-top: 12px !important;
+}
+
+
+.bd-l-red{
+    border-left-width: 3px !important;
+    border-left-color: #3f51b5 !important ;
+}
+
+
+@media(min-device-width:480px){
+  .hm-inpt-t-00-00-1{
+    width: 200px !important ;
+  }
+  .hm-inpt-t-00-00-2 , .hm-inpt-t-00-00-3{
+    width: 85px !important ;
+  }
+  .hm-inpt-t-00-00-3{
+    width: 100px !important ;
+  }
+}
+
+@media print
+{
+    .no-print, .print , .no-print , .hm-nav-bar-aside *
+    {
+        display: none !important;
+    }
+}
