@@ -1,0 +1,196 @@
+<title>Adavanced Settings </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- hilmacs Content Navbar -->
+		  <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 hm-nav-bar-aside">
+  				<div class="col-sm-12">
+  				  <h5 class="no-margin m-b b lc-nav-adst"> Advanced Settings</h5>
+  				  <div class="list-group list-group-gap">
+  					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+  					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span>
+  					</a>
+            <a href="/settings/company"  class="list-group-item md-whiteframe-z0">
+  					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-cprofile">   Company Profile </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+  					</a>
+            <a href="/settings/exams"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-exam">   Examinations </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+            <a href="/settings/terms"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-terms">   Terms </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+            <a href="/settings/advanced"  class="list-group-item md-whiteframe-z0 bd-l-red">
+              <span class="mdi-action-settings pull-left"></span><span  class="margin-3 lc-nav-adst">   Advanced Settings </span> <span class="mdi-toggle-radio-button-on text-danger  pull-right"></span>
+            </a>
+  				  </div>
+  				</div>
+			  </div>
+			  <div class="col-md-9 hm-c-1">
+           <div class="row">
+             <h5 class="text-left b lc-nav-adst">Advanced Settings</h5>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#" href="#" class="lc-cog-lang-hd">
+                        System Language
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                         <span class="hm-data-sysLang b"><span class="text-center hm-sys-local">English</span></span>
+                      </div>
+                      <div class="panel-footer">
+                         <button data-toggle="modal" data-target="#hm-modal-s4" type="button" class="btn btn-primary btn-md lc-chg">
+                           Change
+                         </button>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="hm-modal-s4" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title lc-lang-chg" id="" >Change System Language</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="">Select Language</label>
+                              <select class="form-control hm-la-0">
+                                <optgroup label="Africa">
+                                  <option value="kws">Swahili</option>
+                                  <option value="sa">Afikaana</option>
+                                  <option value="zb">Shona</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                  <option value="en" selected>English</option>
+                                  <option value="fr">French</option>
+                                </optgroup>
+                                <optgroup label="Asia">
+                                  <option value="cn">Traditional Chineese</option>
+                                </optgroup>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+                            <button type="button" class="btn btn-primary  hm-la-1">Save Changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" class="lc-country" data-parent="#" href="#">
+                          Country Of Operation
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body b hm-sys-region">
+                        Uganda
+                      </div>
+                      <div class="panel-footer">
+                         <button data-toggle="modal" data-target="#hm-modal-s5" type="button" class="btn btn-primary btn-md lc-chg">
+                           Change
+                         </button>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="hm-modal-s5" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title lc-country-chg" id="">Change Country</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="">Set Language</label>
+                              <select class="form-control hm-la-01">
+                                <optgroup label="Africa">
+                                  <option value="ky">Kenya</option>
+                                  <option value="sa">South Africa</option>
+                                  <option value="ug" selected>Uganda</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                  <option value="fr">France</option>
+                                  <option value="en">Britain</option>
+                                </optgroup>
+                                <optgroup label="Asia">
+                                  <option value="cn">China</option>
+                                </optgroup>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+                            <button type="button" class="btn btn-primary  hm-la-2">Save Changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="alert-w--chg-grade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title redText text-center" id="">Warning</h4>
+                          </div>
+                          <div class="modal-body">
+                            <blockquote cite="/settings/grading/adjust" class="redText">
+                              Your advised to change the grading scale rhiming to your country
+                            </blockquote>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">it's Ok</button>
+                            <button type="button" onclick="hmHref('/settings/grading/adjust');" class="btn btn-primary ">Change Grading</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" class="lc-sys-mode" data-parent="#" href="#">
+                          School Type
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body b">
+                        Primary School
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

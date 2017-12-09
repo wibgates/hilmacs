@@ -1,0 +1,179 @@
+<title>Structures </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 no-print hm-nav-bar-aside">
+    				<div class="col-sm-12">
+    				  <h5 class="no-margin m-b b">
+              Section Overview</h5>
+    				  <div class="list-group list-group-gap">
+    					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+    					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+    					</a>
+    					<a href="/settings/structures"  class="list-group-item md-whiteframe-z0 bd-l-red">
+    					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+    					</a>
+              <a href="/settings/classes"  class="list-group-item md-whiteframe-z0">
+    					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-classes">   Manage Classes </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+    					</a>
+              <a href="/settings/subjects"  class="list-group-item md-whiteframe-z0">
+                <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-subjects">   Manage Subjects </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+              </a>
+              <a href="/settings/dorms"  class="list-group-item md-whiteframe-z0">
+    					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-dorms">   Manage Dormitries </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+    					</a>
+    				  </div>
+    				</div>
+			  </div>
+			  <div class="col-md-9">
+          <div class="row">
+            <h5 class="text-left b">Struture Overview</h5>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin m-b panel-title b strtoupper">Classes</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h3 text-danger">
+                        49%
+                      </div>Occupied
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div><strong><span class="hm-classes-count">0</span></strong> Total Classes</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin m-b panel-title b strtoupper">Subjects</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h3 text-danger">
+                        78%
+                      </div>Offered
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div><strong><span class="hm-subjects-count">0</span></strong> Total Subjects</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin panel-title m-b b strtoupper">Dormitries / Apt. Rooms</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h3 text-danger">
+                        12%
+                      </div>Occupied
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div><strong><span class="hm-dorms-count">0</span></strong> Total Dorms</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin m-b panel-title b strtoupper">Best Class</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h4 text-success">
+                        S.3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin m-b panel-title b strtoupper">Best Subject</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h4 text-success">
+                        Sceince
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin m-b panel-title b strtoupper">Best Dorm</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h4 text-success">
+                        Lion
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h5 class="text-left b">Other Details</h5>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin panel-title m-b b strtoupper">Empty Classrooms </h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h3 text-warning">
+                        12%
+                      </div>Occupied
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div><strong><span class="hm-classes-count">0</span></strong> Total Dorms</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-card p m-b-sm">
+                <h5 class="no-margin panel-title m-b b strtoupper">Empty Dorms / Apt. Rooms</h5>
+                <div class="text-center">
+                  <div class="inline">
+                    <div ui-jp="easyPieChart">
+                      <div class="font-bold h3 text-warning">
+                        12%
+                      </div>Occupied
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div><strong><span class="hm-classes-count">0</span></strong> Total Dorms</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

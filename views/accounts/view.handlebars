@@ -1,0 +1,73 @@
+<title>Accounts | Admin  </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 no-print hm-nav-bar-aside">
+				<div class="col-sm-12">
+				  <h5 class="no-margin m-b b lc-account">Accounts</h5>
+          <div class="list-group list-group-gap">
+					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/view"  class="list-group-item md-whiteframe-z0 bd-l-red">
+					  <span class="mdi-content-content-paste pull-left"></span><span  class="margin-3 lc-nav-acc">   Accounts  </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+					</a>
+					<a href="/accounts/instructor" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-account-circle pull-left"></span><span  class="margin-3 lc-nav-tt">   Instructors </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/adminstrator" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-account-circle pull-left"></span><span  class="margin-3 lc-nav-admin">   Adminstrators </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-8">
+           <div class="row">
+             <h5 class="text-left b lc-mn-acc-v-hd">Adminstrator & Teacher's Accounts</h5>
+             <div class="panel panel-default ng-scope">
+                <div class="panel-heading no-print ">
+                  Accounts
+                </div>
+                <table class="table table-striped table-bordered">
+                 <thead>
+                   <tr class="no-print">
+                     <th colspan="7">
+                       <input class="form-control ng-isolate-scope" placeholder="search by username or fullnmaes here..." type="text">
+                     </th>
+                   </tr>
+                   <tr>
+                     <th> Username</th>
+                     <th> Fullnames</th>
+                     <th> Role</th>
+                     <th> State</th>
+                     <th>Date Added</th>
+                     <th class="no-print">Lock/Unlock </th>
+                   </tr>
+                   </thead>
+                   <tbody class="hm-mv-accounts-v-port">
+                     &nbsp;
+                   </tbody>
+                 </table>
+              </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

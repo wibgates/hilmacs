@@ -1,0 +1,123 @@
+<title>Accounts | Students </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 hm-nav-bar-aside">
+				<div class="col-sm-12">
+				  <h5 class="no-margin m-b">Accounts For
+            {{#if breadcam}}
+              {{breadcam}}
+            {{/if}}
+          </h5>
+				  <div class="list-group list-group-gap">
+					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/view"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-content-content-paste pull-left"></span><span  class="margin-3 lc-nav-acc">   Accounts  </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="/accounts/instructor" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-account-circle pull-left"></span><span  class="margin-3 lc-nav-tt">   Instructors </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/adminstrator" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-account-circle pull-left"></span><span  class="margin-3 lc-nav-admin">   Adminstrators </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-8">
+          <div class="box-inner padding ng-scope hm-a1" ui-view="" id="view"><div class="padding-out ng-scope">
+           <div class="p-h-md p-v bg-white box-shadow pos-rlt ">
+               <h3 class="no-margin"><i class="mdi-social-person-add pull-left "></i> <span style="margin-left:2%;">Enroll New Student :</span> </h3>
+             </div>
+             <div class="box">
+               <div class="col-md-9 b-l bg-white bg-auto">
+                 <div class="p-md bg-light lt b-b font-bold">Public Profile</div>
+                 <form role="form" method="post" class="p-md col-md-12 ng-pristine ng-valid" enctype="multipart/form-data">
+                   <div class="col-md-6">
+                     <div class="form-group">
+                       <label>Fullnames</label>
+                       <input type="text" name="fullnames" class="form-control hm-inpt-b1 p-fullnames b" onkeypress="virTalUsername('hm-inpt-b1','hm-inpt-b2');" maxlength="150" autocomplete="off">
+                     </div>
+                     <div class="form-group">
+                       <label>Username</label>
+                       <input type="text" name="username" class="form-control hm-inpt-b2  b"  maxlength="150" autocomplete="off">
+                     </div>
+                     <div class="form-group">
+                       <label>Phone Number</label>
+                       <input type="number" name="phone" class="form-control hm-inpt-b3 p-tel v-tel b" maxlength="15" autocomplete="off">
+                     </div>
+                     <div class="form-group">
+                       <label>Primary Address </label>
+                       <address class="">
+                         <textarea name="address" class="form-control hm-inpt-b4 p-address " style="resize:none" placeholder="" rows="3" cols="80"></textarea>
+                       </address>
+                     </div>
+                   </div>
+                   <div class="col-md-6">
+                     <div class="form-group">
+                       <label>Password</label>
+                       <input type="password" name="password" class="form-control hm-inpt-b5 p-password "  maxlength="150" autocomplete="off">
+                     </div>
+                     <div class="form-group">
+                       <label>URL</label>
+                       <input type="text" disabled class="form-control hm-inpt-b6 b">
+                       <input type="hidden" name="role"  class="form-control hm-inpt-b6_1 b">
+                     </div>
+                     <div class="form-group">
+                       <label>Adminstration Position </label>
+                       <select class="form-control hm-inpt-b7" onchange="createAdminUrl('hm-inpt-b7','hm-inpt-b6' ,'hm-inpt-b6_1') ;">
+                         <optgroup label="Finance Department">
+                           <option value="director">Director</option>
+                           <option value="bursur">Bursur</option>
+                           <<option value="hrm">Human Resource Manager</option>>
+                         </optgroup>
+                         <optgroup label="Academics Department">
+                           <option value="principal">Principal</option>
+                           <option value="dos">Director of Studies</option>
+                           <option value="instructor">Instructor</option>
+                           <option value="librarian">Librarian</option>
+                         </optgroup>
+                         <optgroup label="Medical Department">
+                           <option value="nurse">Nurse</option>
+                         </optgroup>
+                         <optgroup label="Ethics & Social Relations Department">
+                           <option value="ethics">Displinary Master</option>
+                         </optgroup>
+                       </select>
+                     </div>
+                     <!--div class="form-group">
+                       <label>Profile picture ( <small>passportPhoto</small>)</label>
+                       <div class="form-file">
+                         <input type="file" class="hm-inpt-a4" onchange="chgImgUrl('hm-inpt-a3' , 'hm-inpt-a4');">
+                         <button class="btn btn-default">Upload New Photo</button>
+                       </div>
+                     </div-->
+                   </div>
+                   <button md-ink-ripple="" class="btn btn-fw btn-info btn-md pull-left col-md-4 col-xs-offset-1">Submit<div class="md-ripple-container" style=""></div></button>
+                 </form>
+               </div>
+             </div>
+           </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

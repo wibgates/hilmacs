@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app>
+   <head>
+    <meta name="description" content="Hilmacs School Management System">
+    <meta name="keywords" content="Hilmacs System">
+    <meta name="twitter:" content="hilmacs">
+    <meta name="facebook:" content="HilmacsUganda">
+    <meta name="author:" content="Wibgates Kenneth The Great">
+    <link rel="shortcut icon" href="/img/logo.ico">
+    <link rel="stylesheet" href="/css/hilmacs.css" type="text/css"/>
+   </head>
+   <body>
+     {{#if body}}
+         {{{body}}}
+     {{ else }}
+         Page failed to load : Contact your systems techinical adminstrator
+     {{/if}}
+     <!-- hilmacs running scripts -->
+     <script src="/js/plugins/hmc.jquery.min.js" type='text/javascript'></script>
+     <script src="/js/plugins/hmc.bootstrap.js" type='text/javascript'></script>
+     <script src="/js/plugins/hmc.moment.js" type='text/javascript'></script>
+     <script src="/js/jet.pwr/hilmacs.min.js" type='text/javascript'></script>
+     <!-- models --
+     <script src="/js/models/hmModal-grading.js" type='text/javascript'></script>-->
+     <script src="/js/jet.pwr/hilmacs.locals.js" type='text/javascript'></script>
+     <script src="/js/jet.pwr/hilmacs.locals.assign.js" type='text/javascript'></script>
+     <!--script src="/js/plugins/hmc.vue.js" type='text/javascript'></script-->
+     <script src="/js/plugins/hmc.w3.js" type='text/javascript'></script>
+     <!--script src="/js/plugins/hmc.angular.min.js" type='text/javascript'></script-->
+
+     <!-- run ensentials -->
+     <script> w3.includeHTML();  </script>
+     <script src="/js/plugins/hmc.locate.js" type='text/javascript'></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107299357-1"></script>
+   </body>
+</html>

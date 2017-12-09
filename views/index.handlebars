@@ -1,0 +1,172 @@
+<title>Hilmacs | Admin </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+		  <div class="navbar md-whiteframe-z1 no-radius indigo" ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary">
+			<div class="navbar-item pull-left h4 ng-binding col-md-3 systemLabel" >&nbsp;</div>
+      <div class="navbar-item pull-left h4 ng-binding col-md-8" >
+         <input class="form-control input-lg no-bg no-border ng-valid ng-dirty ng-valid-parse ng-touched mainSrchTop" autofocus placeholder="Search" ng-model="app.search.content" tabindex="0" aria-invalid="false" style="">
+       </div>
+			<!-- / -->
+
+			<!-- Common tools -->
+      <ul class="nav nav-sm navbar-tool pull-right" ng-hide="$state.current.data.child" aria-hidden="false">
+        <li>
+         <a md-ink-ripple="" ng-click="app.search.show = true" tabindex="0" class="">
+           <i class="mdi-action-search i-24">
+           </i>
+           <i onclick="hmHref('/messages');" class="mdi-communication-chat i-24"></i>
+         <div class="md-ripple-container" style=""></div></a>
+       </li>
+       <li class="dropdown">
+          <a md-ink-ripple="" data-toggle="dropdown">
+            <i class="mdi-navigation-more-vert i-24"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-scale pull-right pull-up text-color">
+            <li><a href="">Admin</a></li>
+            <li class="divider"></li>
+            <li>{{#if user}}<a href="/users/logout">Logout</a>{{/if}}</li>
+          </ul>
+        </li>
+      </ul>
+
+		  </div>
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3">
+				<div class="col-sm-12">
+				  <h5 class="no-margin m-b">Main Dashboard</h5>
+				  <div class="list-group list-group-gap">
+					<a href="./" class="list-group-item md-whiteframe-z1">
+					  <span class="glyphicon glyphicon- glyphicon-stats pull-left"></span><span  class="margin-3 lc-nav-ov">  Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="#!accounts" onclick="load('hilmacsView','panel/wprimClients/wprimClients.php');" class="list-group-item md-whiteframe-z0">
+					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3">   User Accounts </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="/accounts/ids" onclick="load('hilmacsView','panel/wprimLicense/wprimLicense.php');" class="list-group-item md-whiteframe-z0">
+					  <span class="glyphicon glyphicon-certificate pull-left"></span><span  class="margin-3 lc-nav-ids">   Identification Cards </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/grading" onclick="load('hilmacsView','panel/wprimLicense/wprimLicense.php');" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-grade pull-left"></span><span  class="margin-3 lc-nav-grade">   Set Grading Scale </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="/sms" class="list-group-item md-whiteframe-z0">
+					  <span class="glyphicon  glyphicon-phone pull-left"></span><span  class="margin-3">   Send Sms's &amp; Emails </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="/logins" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-input pull-left"></span><span  class="margin-3 lc-nav-log">   Monitor Logins  </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/backup" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-settings-backup-restore pull-left"></span><span  class="margin-3 lc-nav-brest">   Backups &amp; Restore  </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-9">
+           <div class="box-inner padding ng-scope hm-a1" ui-view="" id="view"><div class="padding-out ng-scope">
+            <div class="p-h-md p-v bg-white box-shadow pos-rlt ">
+                <h3 class="no-margin">Enroll New Student</h3>
+              </div>
+              <div class="box">
+                <div class="col-md-3">
+                  <div class="hm-inpt-a3_1" style="background:url(../public/img/logo.ico) center center; background-size:cover">
+                    <div class="p-lg bg-white-overlay text-center">
+                      <a href="" class="w-xs inline">
+                        <img src="../public/img/logo.ico" class="img-circle img-responsive hm-inpt-a3">
+                      </a>
+                      <div class="m-b m-t-sm h2">
+                        <span class="text-black">Photo</span>
+                      </div>
+                      <p>
+                        Great day, Great life @ <span class="systemLabel"></span>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="nav nav-lists b-t" ui-nav="">
+                    <li class="active">
+                      <a href="">New Students</a>
+                    </li>
+                    <li class="active">
+                      <a href="">New Instructor</a>
+                    </li>
+                    <li class="active">
+                      <a href="">New Adminstrator</a>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="col-md-9 b-l bg-white bg-auto">
+                  <div class="p-md bg-light lt b-b font-bold">Public Student Profile</div>
+                  <form role="form" class="p-md col-md-12 ng-pristine ng-valid" enctype="multipart/form-data">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Fullnames</label>
+                        <input type="text" class="form-control hm-inpt-a0" onkeypress="createStdUrl();" maxlength="150" autocomplete="off">
+                      </div>
+                      <div class="form-group">
+                        <label>Reg. Number</label>
+                        <input type="text" class="form-control hm-inpt-a1" >
+                      </div>
+                      <div class="form-group">
+                        <label>URL</label>
+                        <input type="text" class="form-control hm-inpt-a2">
+                      </div>
+                      <div class="form-group">
+                        <label>Parent's Phone Number</label>
+                        <input type="number" class="form-control" maxlength="15" autocomplete="off">
+                      </div>
+                      <div class="form-group">
+                        <label>Student Address </label>
+                        <address class="">
+                          <input type="address" class="form-control">
+                        </address>
+                      </div>
+                      <div class="checkbox">
+                        <label class="ui-checks">
+                          <input type="checkbox"><i></i> Boarding Student
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Student's Class</label>
+                        <select class="form-control systemClasses">
+                          <<option value="S.6" selected> S.6</option>>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Student's Combination ( <small>if S.6  or S.5</small> )</label>
+                        <select class="form-control systemClasses">
+                          <<option value="BCM/ICT" selected> BCM/ICT </option>>
+                        </select>
+                      </dfiv>
+                      <div class="form-group">
+                        <label>Former School</label>
+                        <input type="text" class="form-control hm-inpt-a0"  autocomplete="off">
+                      </div>
+                      <div class="form-group">
+                        <label>Student Profile picture ( <small>passportPhoto</small>)</label>
+                        <div class="form-file">
+                          <input type="file" class="hm-inpt-a4" onchange="chgImgUrl('hm-inpt-a3' , 'hm-inpt-a4');">
+                          <button class="btn btn-default">Upload New Photo</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button md-ink-ripple="" class="btn btn-fw btn-primary pull-left col-md-4 col-xs-offset-1">Submit<div class="md-ripple-container" style=""></div></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

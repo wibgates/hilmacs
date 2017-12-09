@@ -1,0 +1,133 @@
+<title>Structures | Classes  </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 no-print hm-nav-bar-aside">
+				<div class="col-sm-12">
+				  <h5 class="no-margin m-b b">
+          Classes / Lecture rooms</h5>
+				  <div class="list-group list-group-gap">
+					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="/settings/structures"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/settings/classes"  class="list-group-item md-whiteframe-z0 bd-l-red">
+					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-classes">   Manage Classes </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+					</a>
+          <a href="/settings/subjects"  class="list-group-item md-whiteframe-z0">
+            <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-subjects">   Manage Subjects </span> <span class="mdi-navigation-chevron-left  pull-right"></span>
+          </a>
+          <a href="/settings/dorms"  class="list-group-item md-whiteframe-z0">
+					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-dorms">   Manage Dormitries </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-8">
+          <div class="row">
+            <h5 class="text-left b">Lecture Rooms / Classes &amp; Streams</h5>
+            <div class="panel panel-default ng-scope">
+               <div class="panel-heading no-print">
+                 Classes &amp; Streams
+               </div>
+               <div class="panel-body">
+                 <button data-toggle="modal" data-target="#hm-modal-c1" type="button" class="btn btn-sm btn-success no-print" tabindex="0">
+                   <i class="glyphicon glyphicon-plus">
+                   </i> Add Class / Lecture Room
+                 </button>
+                 <div class="modal fade" id="hm-modal-c1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h4 class="modal-title" id="">Create New Class</h4>
+                       </div>
+                       <div class="modal-body">
+                         <div class="form-group">
+                           <label for="">Class Room Name</label>
+                           <input type="text" class="form-control hm-inpt-modal-c1" id="" placeholder="">
+                         </div>
+                         <div class="form-group">
+                           <label for="">Stream / Unit Name <small>(optional)</small></label>
+                           <input type="text" class="form-control hm-inpt-modal-c2" id="" placeholder="ie: East, West , South...">
+                         </div>
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary hm-btn-modal-c1" data-dismiss="modal"><span class="hm-invoke-c1">Create Class</span></button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="modal fade hm-modal-edit-uclasses" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                   <div class="modal-dialog modal-md">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h4 class="modal-title" id="">Class Streams for :  <span class="text-primary b hm-modal-edit-uclasses-hd"></span> </h4>
+                       </div>
+                       <div class="modal-body ">
+                         <table class="table table-striped table-bordered">
+                          <thead>
+                            <tr class="no-print hm-srch-str-units">
+                              <th colspan="7">
+                                <input class="form-control ng-isolate-scope" placeholder="search for stream" type="text">
+                              </th>
+                            </tr>
+                            <tr>
+                              <th>Stream Name</th>
+                              <th class="no-print">Modify </th>
+                            </tr>
+                            </thead>
+                            <tbody class="hm-mv-uclasses">
+                               &nbsp;
+                            </tbody>
+                          </table>
+                       </div>
+                     	<div class="modal-footer">
+                     		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     	</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <table class="table table-striped table-bordered">
+                <thead>
+                  <tr class="no-print">
+                    <th colspan="7">
+                      <input class="form-control ng-isolate-scope" placeholder="search for class" type="text">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Class Name</th>
+                    <th class="no-print">Class Unit</th>
+                    <th>Date Added </th>
+                    <th class="no-print">Modify </th>
+                  </tr>
+                  </thead>
+                  <tbody class="hm-mv-classes">
+                     &nbsp;
+                  </tbody>
+                </table>
+             </div>
+          </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

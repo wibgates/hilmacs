@@ -1,0 +1,214 @@
+<title>Company Profile </title>
+  <div  id="content" class="app-content ng-scope"  role="main" ui-view="content@">
+    <div class="box ng-scope">
+		  <!-- Content Navbar -->
+		  <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  -->
+       <div class="box-inner padding ng-scope" ui-view="" id="view">
+         <!-- uiView:  -->
+         <div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 hm-nav-bar-aside">
+  				<div class="col-sm-12">
+  				  <h5 class="no-margin m-b b lc-nav-adjgrade">
+            Adjust Grading</h5>
+  				  <div class="list-group list-group-gap">
+  					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+  					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span>
+  					</a>
+            <a href="/settings/grading"  class="list-group-item md-whiteframe-z0  bd-l-red">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-adjgrade">   General Grading </span> <span class="mdi-toggle-radio-button-on text-danger   pull-right"></span>
+            </a>
+            <a href="/settings/grading/advanced"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-advgrade">   Advanced Grading </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+  				  </div>
+  				</div>
+			  </div>
+			  <div class="col-md-8">
+           <div class="row">
+             <h5 class="text-left b">Grading Panel</h5>
+             <div class="panel panel-default ng-scope">
+                <div class="panel-heading">
+                  Set Grading
+                </div>
+                <div class="panel-body no-print">
+                  <button type="button" data-toggle="modal" data-target="#hm-modal-g1" class="btn btn-sm red" tabindex="0">
+                    <i class="glyphicon glyphicon-plus">
+                    </i> Add General Grade
+                  </button>
+                  <button type="button" data-toggle="modal" data-target="#hm-modal-g1-1" class="btn btn-sm yellow" tabindex="0">
+                    <i class="glyphicon glyphicon-plus">
+                    </i> Add General Grades in Bulk
+                  </button>
+                  <button type="button" data-toggle="modal" data-target="#hm-modal-g2" class="btn btn-sm btn-info" tabindex="0">
+                    <i class="glyphicon glyphicon-time">
+                    </i> Current View : <span class="hm-sv-v-g-year"> 2017</span>
+                  </button>
+                  <div class="modal fade ucwords" id="hm-modal-g1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title b" id="">Add a new grade</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label"> Year</label>
+                            <div class="col-sm-10">
+                              <select class="form-control hm-sv-years hm-inpt-g-y" name="">
+                              </select>
+                            </div>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Class</label>
+                            <div class="col-sm-10">
+                              <select class="form-control hm-sv-classes hm-inpt-g-a" name="">
+                              </select>
+                            </div>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Grade</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="" maxlength="3" class="form-control hm-inpt-g-b" value="">
+                            </div>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Value</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control hm-inpt-g-c" maxlength="3" min="1" max="100" value="">
+                            </div>
+                          </div>
+                          <br><br>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Discard</button>
+                          <button type="button" class="btn btn-primary hm-g-btn-save-a disabled pull-left" data-dismiss="modal">Create & View </button>
+                          <button type="button" class="btn btn-warning hm-g-btn-save-a disabled pull-left" data-toggle="modal" data-target="#hm-modal-g1">New </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade ucwords" id="hm-modal-g1-1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title b hm-modal-g1-1-hd" id="">Add new grade <strong>(s)</strong> </h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label"> Year</label>
+                            <div class="col-sm-10">
+                              <select class="form-control hm-sv-years hm-inpt-g-y-1" name="">
+                              </select>
+                            </div>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Class</label>
+                            <div class="col-sm-10">
+                              <select class="form-control hm-sv-classes hm-inpt-g-a-1" name="">
+                              </select>
+                            </div>
+                          </div><br><br>
+                          <div class="form-group ">
+                            <label class="col-sm-2 control-label">Grades </label>
+                            <div class="col-sm-10">
+                              <input type="text" name="" maxlength="50" placeholder="D1, D2, C3..." class="form-control hm-inpt-g-b-1" value="">
+                            </div>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Value</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control hm-inpt-g-c-1" placeholder="90, 80, 70..." maxlength="50" min="1" max="100" value="">
+                            </div>
+                          </div>
+                          <br><br>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Discard</button>
+                          <button type="button" class="btn btn-primary hm-g-btn-save-a-1 disabled pull-left" >Create & View </button>
+                          <button type="button" class="btn btn-warning hm-g-btn-save-a-1-1 disabled pull-left" data-toggle="modal" data-target="#hm-modal-g1">New </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="hm-modal-g2" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title" id="hm-g-s-v-hd">View Grade by</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label"> Year</label>
+                            <div class="col-sm-10">
+                              <select class="form-control hm-sv-years hm-inpt-g-y-a" name="">
+                              </select>
+                            </div>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Class</label>
+                            <div class="col-sm-10">
+                              <select class="form-control hm-sv-classes hm-inpt-g-y-b" name="">
+                              </select>
+                            </div>
+                          </div><br><br>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                          <button type="button" class="btn btn-primary indigo hm-g-btn-save-b">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- warning modal -->
+                  <div class="modal fade" id="hm-modal-warn-0" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title redText text-center " id="hm-modal-warn-hd">Sorry</h4>
+                        </div>
+                        <div class="modal-body">
+                          <blockquote cite="#" class="hm-modal-warn-body">
+                          </blockquote>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">it's Ok</button>
+                          <button type="button" class="btn btn-primary" name="button" data-toggle="modal" data-target="#hm-modal-g1" data-dismiss="modal">Create One</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table st-table="displayedCollection" st-safe-src="rowCollection" class="table table-striped table-bordered ucwords">
+                  <thead>
+                    <tr class="text-center">
+                      <th>Class Name </th>
+                      <!--th class="hm-tr-grades-hd">Year</th-->
+                      <th>Grade Name</th>
+                      <th>Grade Value</th>
+                      <th>Discard</th>
+                    </tr>
+                  </thead>
+                  <tbody class="hm-mv-grades text-center">
+                    &nbsp;
+                  </tbody>
+                </table>
+              </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>

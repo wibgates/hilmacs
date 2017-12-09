@@ -1,0 +1,99 @@
+<title>Company Profile </title>
+  <div  id="content" class="app-content ng-scope"  role="main" ui-view="content@">
+    <div class="box ng-scope">
+		  <!-- Content Navbar -->
+		  <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  -->
+       <div class="box-inner padding ng-scope" ui-view="" id="view">
+         <!-- uiView:  -->
+         <div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 hm-nav-bar-aside">
+  				<div class="col-sm-12">
+  				  <h5 class="no-margin m-b b">
+            Examination Types</h5>
+  				  <div class="list-group list-group-gap">
+  					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+  					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span>
+  					</a>
+            <a href="/settings/company"  class="list-group-item md-whiteframe-z0">
+  					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-cprofile">   Company Profile </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+  					</a>
+            <a href="/settings/exams"  class="list-group-item md-whiteframe-z0 bd-l-red">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-exam">   Examinations </span> <span class="mdi-toggle-radio-button-on text-danger  pull-right"></span>
+            </a>
+            <a href="/settings/terms"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-terms">   Terms </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+            <a href="/settings/advanced"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-action-settings pull-left"></span><span  class="margin-3 lc-nav-adst">   Advanced Settings </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+  				  </div>
+  				</div>
+			  </div>
+			  <div class="col-md-8">
+           <div class="row">
+             <h5 class="text-left b">Supported examination types and tests papers</h5>
+             <div class="panel panel-default ng-scope">
+                <div class="panel-heading">
+                  Exams &amp; Test view
+                </div>
+                <div class="panel-body">
+                  <button type="button" data-toggle="modal" data-target="#hm-modal-e1" class="btn btn-sm btn-success" tabindex="0">
+                    <i class="glyphicon glyphicon-plus">
+                    </i> Add Exam or Test {type}
+                  </button>
+
+                  <div class="modal fade" id="hm-modal-e1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title" id="">Add a new Exam Type -or- test</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <span class="input-group-addon bg-info">Name</span>
+                              <input type="text" maxlength="125" class="form-control hm-inpt-modal-e1" placeholder="ie: Begining of Term">
+                            </div><br>
+                            <div class="input-group">
+                              <span class="input-group-addon bg-info"><abbr title="">Abbr</abbr></span>
+                              <input type="text" maxlength="7" class="form-control hm-inpt-modal-e2 " placeholder="ie: BOT">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer text-muted">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+                          <button type="button" class="btn btn-primary hm-btn-modal-e1 hm-invoke-e1" data-dismiss="modal">Create Exam Type</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table st-table="displayedCollection" st-safe-src="rowCollection" class="table table-striped table-bordered">
+                  <thead>
+                    <th>Exam Name</th>
+                    <th>Abbreviation</th>
+                    <th>Status</th>
+                    <th>Discard</th>
+                  </thead>
+                  <tbody class="hm-mv-exams">
+                    &nbsp;
+                  </tbody>
+                </table>
+              </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>

@@ -1,0 +1,45 @@
+<title>Hilmacs | Login</title>
+<div class="app">
+     <div class="deep-purple-700 bg-big" id="hlmLoginApp_Container_" >
+   <div class="center-block w-xxl w-auto-xs p-v-md">
+   <div class="navbar">
+     <div class="navbar-brand m-t-lg text-center">
+     <span class="m-l inline">Hilmacs</span>
+     </div>
+   </div><br><br>
+        <div class="p-lg panel md-whiteframe-z1 text-color m animated fadeIn">
+          <div class="m-b text-sm text-center text-bold ">
+            <strong>
+              {{#if success_msg}}
+                <span class="greenText">  {{success_msg}}</span><br/>
+              {{/if}}
+              {{#if error_msg}}
+                <span class="redText">  {{error_msg}}</span><br/>
+              {{/if}}
+              {{#if error}}
+                <span class="redText">  {{error}}</span><br/>
+              {{/if}}
+             Please login
+          </strong>
+        </div>
+       <form name="form" action="/users/login" method="POST" >
+       <div class="md-form-group float-label">
+         <input type="username" class="md-input text-center" name="username" id="username"  ng-model="user.email" maxlength="12" required autofocus>
+         <label  class="block w-full text-center">Username</label><br/><br/>
+       </div>
+       <div class="md-form-group">
+       <input type="password" name="password" id="password" class="md-input text-center" required autocomplete="off" >
+       <label class="block w-full text-center">Your Password</label>
+     </div>
+       <button md-ink-ripple=""  type="submit" class="md-btn md-raised indigo btn-block p-h-md">Login</button>
+     </form>
+    </div>
+
+    <div class="p-v-lg text-center">
+      <a href="indetify.php" class="m-b">Forgot Username ?</a>
+     </div>
+
+   </div>
+
+ </div>
+</div>

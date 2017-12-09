@@ -1,0 +1,50 @@
+<title>Id.Cards | Adminstrators </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3">
+				<div class="col-sm-12">
+				  <h5 class="no-margin m-b">
+            Issue {{#if breadcam}}
+            {{breadcam}}
+            {{/if}}
+          </h5>
+				  <div class="list-group list-group-gap">
+					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts"  class="list-group-item md-whiteframe-z0">
+            <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+          </a>
+					<a href="/accounts/id.card/student"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-picture-in-picture pull-left"></span><span  class="margin-3">   Id.s for Students </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/id.card/instructor"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-picture-in-picture pull-left"></span><span  class="margin-3">   Id.s for Teachers </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/id.card/admin"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-picture-in-picture pull-left"></span><span  class="margin-3">   Id.s for Adminstrators </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-9">
+
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

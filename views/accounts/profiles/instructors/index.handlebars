@@ -1,0 +1,474 @@
+<title>Accounts | Instructors </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 hm-nav-bar-aside">
+				<div class="col-sm-12">
+				  <h5 class="no-margin m-b">Accounts For
+            {{#if breadcam}}
+              {{breadcam}}
+            {{/if}}
+          </h5>
+				  <div class="list-group list-group-gap">
+					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+          <a href="/accounts/view"  class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-content-content-paste pull-left"></span><span  class="margin-3 lc-nav-acc">   Accounts  </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+					<a href="/accounts/instructor" class="list-group-item md-whiteframe-z0 bd-l-red">
+					  <span class="mdi-action-account-circle pull-left"></span><span  class="margin-3 lc-nav-tt">   Instructors </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+					</a>
+          <a href="/accounts/adminstrator" class="list-group-item md-whiteframe-z0">
+					  <span class="mdi-action-account-circle pull-left"></span><span  class="margin-3 lc-nav-admin">   Adminstrators </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-8">
+          <div class="box-inner padding ng-scope hm-a1" ui-view="" id="view"><div class="padding-out ng-scope">
+           <div class="p-h-md p-v bg-white box-shadow pos-rlt ">
+               <h3 class="no-margin"><i class="mdi-social-person-add pull-left "></i> <span style="margin-left:2%;" class="s-18">Register New Instructor :</span> </h3>
+             </div>
+             <div class="box">
+               <div class="col-md-9 b-l bg-white bg-auto">
+                   <div class="hm-inpt-t-bind-1">
+                     <div class="p-md bg-light lt b-b font-bold h-sm-30"><br><span class="hm-hd-t-1">Public Profile</span></div>
+                     <form role="form" method="post" class="p-md col-md-12 ng-pristine ng-valid" enctype="multipart/form-data">
+                       <div class="col-md-6">
+                         <div class="form-group">
+                           <label>Fullnames</label>
+                           <input type="text" name="fullnames" class="form-control hm-inpt-t-1 p-fullnames b" maxlength="150" autocomplete="off">
+                         </div>
+                         <div class="form-group">
+                           <label>Username</label>
+                           <input type="text" name="username" class="form-control hm-inpt-t-2  b"  maxlength="150" autocomplete="off">
+                         </div>
+                         <div class="form-group">
+                           <label>Phone Number</label>
+                           <input type="number" name="phone" class="form-control hm-inpt-t-3 p-tel v-tel b" maxlength="15" autocomplete="off">
+                         </div>
+                         <div class="form-group">
+                           <label>Primary Address </label>
+                           <address class="">
+                             <textarea name="address" class="form-control hm-inpt-t-4 p-address hm-text-noresize" placeholder="" rows="3" cols="80"></textarea>
+                           </address>
+                         </div>
+                       </div>
+                       <div class="col-md-6">
+                         <div class="form-group">
+                           <label>Password</label>
+                           <input type="password" name="password" class="form-control hm-inpt-t-5 p-password "  maxlength="150" autocomplete="off">
+                         </div>
+                         <div class="form-group">
+                           <label>Adminstration Position </label>
+                           <select class="form-control hm-inpt-t-6" >
+                             <optgroup label="Academics Department">
+                               <option selected>Academic Teacher</option>
+                             </optgroup>
+                             <optgroup label="Sports Department">
+                               <option>Sports Teacher</option>
+                             </optgroup>
+                           </select>
+                         </div>
+                         <div class="form-group">
+                           <label>Teacher Type </label>
+                           <select class="form-control hm-inpt-t-7" >
+                             <optgroup label="Time Preferences">
+                               <option value="1" selected>Full Time Teacher </option>
+                               <option value="2" >Part Time Teacher </option>
+                               <option value="3" >Resourcefull Teacher </option>
+                               <option value="4" >Other</option>
+                             </optgroup>
+                           </select>
+                         </div>
+                         <div class="form-group">
+                           <label>Profile picture ( <small>passportPhoto</small>)</label>
+                           <div class="form-file">
+                             <input type="file" class="hm-inpt-t-8" onchange="chgImgUrl('hm-inpt-a3' , 'hm-inpt-a4');">
+                             <button class="btn btn-default">Upload New Photo</button>
+                           </div>
+                         </div>
+                       </div>
+                   </div>
+                   <div class="col-md-12 h-sm-30">
+                     <center>
+                       <span class="hm-save-btn-t-bind-1"><button type="button" class="btn btn-danger btn-addon btn-sm">
+                           Save & Next (Classes)<i class="mdi-image-navigate-next pull-right"></i>
+                        </button></span>
+                     </center><br><br>
+                   </div>
+                   <div class="hm-inpt-t-bind-2">
+                     <div class="p-md bg-light lt b-b font-bold h-sm-30"><br>Subjects & Classes</div><br>
+                     <div class="col-md-3">
+                       <div class="form-group">
+                         <label>Class 1 </label>
+                         <select class="form-control hm-inpt-t-9 hm-sv-classes" >
+                           &nbsp;
+                           <option value="0">Choose Class</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Class 2 <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-10 hm-sv-classes" >
+                           &nbsp;<option value="0">Choose Class</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Class 3 <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-11 hm-sv-classes" >
+                           &nbsp;<option value="0">Choose Class</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Class 4 <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-12 hm-sv-classes" >
+                           &nbsp;<option value="0">Choose Class</option>
+                         </select>
+                       </div>
+                     </div>
+                     <div class="col-md-3 hx-r">
+                       <div class="form-group">
+                         <label>Class 1 Stream</label>
+                         <select class="form-control hm-inpt-t-13" >
+                           &nbsp;
+                           <option value="0">Choose Stream</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Class 2 Stream <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-14" >
+                           &nbsp;<option value="0">Choose Stream</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Class 3 Stream <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-15" >
+                           &nbsp;<option value="0">Choose Stream</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Class 4 Stream <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-16" >
+                           &nbsp;<option value="0">Choose Stream</option>
+                         </select>
+                       </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="form-group">
+                         <label>Subject 1 </label>
+                         <select class="form-control hm-inpt-t-17 hm-sv-subjects" >
+                           &nbsp;<option value="0">Choose Subject</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Subject 2  <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-18 hm-sv-subjects" >
+                           &nbsp;<option value="0">Choose Subject</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Subject 3  <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-19 hm-sv-subjects" >
+                           &nbsp;<option value="0">Choose Subject</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Subject 4  <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-20 hm-sv-subjects" >
+                           &nbsp;<option value="0">Choose Subject</option>
+                         </select>
+                       </div>
+                     </div>
+                     <div class="col-md-3 hx-r">
+                       <div class="form-group">
+                         <label>Unit Subject 1</label>
+                         <select class="form-control hm-inpt-t-00-1" >
+                           &nbsp;
+                           <option value="0">Choose Unit Paper</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Unit Subject 2<small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-00-2" >
+                           &nbsp;<option value="0">Choose Unit Paper</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Unit Subject 3 <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-00-3" >
+                           &nbsp;<option value="0">Choose Unit Paper</option>
+                         </select>
+                       </div>
+                       <div class="form-group">
+                         <label>Unit Subject 4 <small>(optional)</small> </label>
+                         <select class="form-control hm-inpt-t-00-4" >
+                           &nbsp;<option value="0">Choose Unit Paper</option>
+                         </select>
+                       </div>
+                     </div>
+                   <hr>
+                   <div class="col-md-12">
+                     <center>
+                       <button type="button" class="btn btn-info btn-addon btn-sm hm-save-btn-t-bind-1-1">
+                           <i class="mdi-image-navigate-before pull-left"></i> Previous
+                      </button>
+                      <button type="button" class="btn btn-danger btn-addon btn-sm hm-save-btn-t-bind-2">
+                          Save &amp; Next (TimeTable) <i class="mdi-image-navigate-next pull-right"></i>
+                       </button>
+                     </center><br><br>
+                   </div>
+                  </div>
+                   <div class="hm-inpt-t-bind-3">
+                     <div class="p-md bg-light lt b-b font-bold h-sm-30"><br>Teacher's Time Table For :
+                       <select class="form-control hm-inpt-t-00-00-1 hm-sv-s-classes h-sm-30 margin-p18 " >
+                         &nbsp;<option value="0">Choose Class</option>
+                       </select>
+                       <button type="button" class="btn btn-addon btn-primary btn-sm margin-p40 margin-t60 hm-auto-t-t-1">
+                            <i class="mdi-av-shuffle pull-left"></i>
+                            <i class="mdi-av-shuffle pull-right"></i>
+                            Auto Assign Schedule
+                       </button>
+                       <button type="button" class="btn  btn-info btn-sm margin-p60 margin-t100 hm-auto-t-t-2">
+                            <i class="mdi-navigation-refresh pull-right"></i>
+                       </button>
+                       <select class="form-control hm-inpt-t-00-00-2 h-sm-30 margin-p65 margin-t100"  >
+                         &nbsp;<option value="0">Session</option>
+                         <option value="1">1 Hr</option>
+                         <option value="2">2 Hrs</option>
+                         <option value="3" selected>3 Hrs</option>
+                         <option value="4">4 Hrs</option>
+                       </select><br>
+                       <select class="form-control hm-inpt-t-00-00-3 h-sm-30 margin-p74 margin-t60"  >
+                         &nbsp;<option value="0">Session</option>
+                         <option value="1">1 Day</option>
+                         <option value="2">2 Days</option>
+                         <option value="3" selected>3 Days</option>
+                         <option value="4">4 Days</option>
+                         <option value="5">5 Days</option>
+                         <option value="6">6 Days</option>
+                         <option value="7">7 Days</option>
+                       </select>
+                     </div><br>
+                     <div class="col-md-12">
+                       <div class="panel panel-default ng-scope">
+                        <div class="panel-heading">Click on time in line with the day <small class="b"><i>(please click on <mark><a href="#hm_create">Create</a></mark> for each particular selected class)</i></small></div>
+                        <table st-table="rowCollectionBasic" class="table table-bordered table-striped">
+                          <thead>
+                          <tr class="hm-std-time-slot">
+                            <th class="padding-10"><i class="mdi-device-access-time"></i></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="mon">
+                              <th class="padding-10 day-1">Mon</th>
+                              <th class="padding-10 hm-t-t-slot-mn-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-mn-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                            <tr class="tue">
+                              <th class="padding-10 day-2">Tue</th>
+                              <th class="padding-10 hm-t-t-slot-tu-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-tu-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                            <tr class="wed">
+                              <th class="padding-10 day-3">Wed</th>
+                              <th class="padding-10 hm-t-t-slot-wn-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-wn-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                            <tr class="thur">
+                              <th class="padding-10 day-4">Thur</th>
+                              <th class="padding-10 hm-t-t-slot-th-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-th-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-th-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-th-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-th-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-th-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-th-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-th-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-th-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-th-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-th-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-th-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-th-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-th-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-th-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-th-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-th-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-th-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-th-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-th-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                            <tr class="fri">
+                              <th class="padding-10 day-5">Fri</th>
+                              <th class="padding-10 hm-t-t-slot-fr-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-fr-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                            <tr class="sat">
+                              <th class="padding-10 day-6">Sat</th>
+                              <th class="padding-10 hm-t-t-slot-sa-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-sa-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                            <tr class="sun">
+                              <th class="padding-10 day-7">Sun</th>
+                              <th class="padding-10 hm-t-t-slot-su-4 t-t-slot day-light-moon t-s-04"></th>
+                              <th class="padding-10 hm-t-t-slot-su-5 t-t-slot day-light-moon t-s-05"></th>
+                              <th class="padding-10 hm-t-t-slot-su-6 t-t-slot day-light-moon t-s-06"></th>
+                              <th class="padding-10 hm-t-t-slot-su-7 t-t-slot day-light t-s-07"></th>
+                              <th class="padding-10 hm-t-t-slot-su-8 t-t-slot day-light t-s-08"></th>
+                              <th class="padding-10 hm-t-t-slot-su-9 t-t-slot day-light t-s-09"></th>
+                              <th class="padding-10 hm-t-t-slot-su-10 t-t-slot day-light t-s-10"></th>
+                              <th class="padding-10 hm-t-t-slot-su-11 t-t-slot day-light t-s-11"></th>
+                              <th class="padding-10 hm-t-t-slot-su-12 t-t-slot day-light t-s-12"></th>
+                              <th class="padding-10 hm-t-t-slot-su-13 t-t-slot day-light t-s-13"></th>
+                              <th class="padding-10 hm-t-t-slot-su-14 t-t-slot day-light t-s-14"></th>
+                              <th class="padding-10 hm-t-t-slot-su-15 t-t-slot day-break-light t-s-15"></th>
+                              <th class="padding-10 hm-t-t-slot-su-16 t-t-slot day-break-light t-s-16"></th>
+                              <th class="padding-10 hm-t-t-slot-su-17 t-t-slot day-break-light t-s-17"></th>
+                              <th class="padding-10 hm-t-t-slot-su-18 t-t-slot dawn-light t-s-18"></th>
+                              <th class="padding-10 hm-t-t-slot-su-19 t-t-slot dawn-light t-s-19"></th>
+                              <th class="padding-10 hm-t-t-slot-su-20 t-t-slot dawn-light t-s-20"></th>
+                              <th class="padding-10 hm-t-t-slot-su-21 t-t-slot dawn-light t-s-21"></th>
+                              <th class="padding-10 hm-t-t-slot-su-22 t-t-slot dawn-light t-s-22"></th>
+                              <th class="padding-10 hm-t-t-slot-su-23 t-t-slot dawn-light t-s-23"></th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                     </div>
+                   <hr>
+                   <div class="col-md-12">
+                     <center>
+                       <button type="button" class="btn btn-info btn-addon btn-sm hm-save-btn-t-bind-2-1">
+                           <i class="mdi-image-navigate-before pull-left"></i> Previous
+                      </button>
+                      <button type="button" class="btn btn-addon btn-danger btn-sm hm-save-btn-t-bind-2-2" id="hm_create">
+                           <i class="fa fa-clock-o pull-right"></i>
+                           Create Time Table
+                      </button>
+                      <div class="hm-btn-t-t-c-0">
+                        <button type="button" class="btn btn-success btn-addon btn-sm hm-save-btn-t-bind-3">
+                             Save &amp; View Profile  <i class="fa fa-user pull-right"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-addon btn-sm hm-save-btn-t-bind-3-1">
+                            Save &amp; New Teacher <i class="mdi-image-navigate-next pull-right"></i>
+                         </button>
+                      </div>
+                     </center><br><br>
+                   </div><br><br><br>
+                 </div>
+                 </form>
+               </div>
+             </div>
+           </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

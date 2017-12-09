@@ -1,0 +1,32 @@
+<div class="navbar md-whiteframe-z1 no-radius indigo hm-nav-bar" ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary">
+  <span class=" hm-nav-bar-top-sandwich"><i class="mdi-navigation-menu text-lg m-t-sm pull-lef"></i></span>
+  <div class="navbar-item h4 ng-binding col-md-3 systemLabel hm-nav-bar-top-label" >&nbsp;</div>
+  <div class="navbar-item pull-left h4 ng-binding col-md-7 hm-searchBar-top" >
+      <i class="mdi-action-search hm-inpt-search-top-icon"></i>
+       <form class="hm-inpt-search-top-form" action="/search" style="overflow:visible" id="hm-inpt-search-top-form" method="get" name="hm-inpt-search-top-0" onsubmit="" role="search">
+         <input name="q" autocomplete="off" spellcheck="true" class="form-control input-lg no-bg no-border ng-valid ng-dirty ng-valid-parse ng-touched hm-inpt-search-top whiteText " autofocus placeholder="Search"  tabindex="0" aria-invalid="false" style="">
+       </form>
+  </div>
+  <!-- / -->
+
+<!-- Common tools -->
+<ul class="nav nav-sm navbar-tool pull-right" ng-hide="$state.current.data.child" aria-hidden="false">
+  <li>
+   <a md-ink-ripple="" ng-click="app.search.show = true" tabindex="0" class="">
+     <i onclick="hmHref('/messages');" class="mdi-communication-chat i-24"></i>
+   <div class="md-ripple-container" style=""></div></a>
+ </li>
+
+ <li class="dropdown">
+    <a md-ink-ripple="" data-toggle="dropdown">
+      <i class="mdi-navigation-more-vert i-24"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-scale pull-right pull-up text-color">
+      <li><a href="">Admin</a></li>
+      <li> {{#if user}}<a href="/users/edit"><i class="mdi-action-settings i-20"></i>My Settings</a>{{/if}}</li>
+      <li class="divider"></li>
+      <li> {{#if user}}<a href="/users/logout"><i class="mdi-action-settings-power i-20"></i>Logout</a>{{/if}}</li>
+    </ul>
+  </li>
+</ul>
+</div>

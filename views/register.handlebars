@@ -1,0 +1,68 @@
+<title>Register</title>
+<div class="app">
+     <div class="deep-purple-700 bg-big" id="hlmLoginApp_Container_" >
+	  <div class="center-block w-xxl w-auto-xs p-v-md">
+		<div class="navbar">
+		  <div class="navbar-brand m-t-lg text-center">
+			<span class="m-l inline">Hilmacs</span>
+		  </div>
+		</div><br>
+    <div class="p-lg panel md-whiteframe-z1 text-color m animated fadeIn">
+    	  <div class="m-b text-sm text-center text-bold ">
+          <strong>
+            {{#if success_msg}}
+              <span class="greenText">  {{success_msg}}</span><br/>
+            {{/if}}
+            {{#if error_msg}}
+              <span class="redText">  {{error_msg}}</span><br/>
+            {{/if}}
+            {{#if error}}
+              <span class="redText">  {{error}}</span><br/>
+            {{/if}}
+           Register System Adminstrator
+        </strong>
+       </div>
+		 <form class="form-horizontal"  action='/users/register' method='post'>
+       <div class="form-group">
+         <label for="" class="col-sm-4 control-label">Username</label>
+         <div class="col-sm-8">
+           <input class="md-input " type="text" name="username"  id="" placeholder="whiteHat256" autofocus required max-length="150">
+         </div>
+       </div>
+       <div class="form-group">
+         <label for="" class="col-sm-4 control-label">Fullnames</label>
+         <div class="col-sm-8">
+           <input class="md-input " type="text" name="fullnames"  id="" placeholder="White Hat" autofocus required max-length="150">
+         </div>
+       </div>
+       <div class="form-group">
+         <label for="" class="col-sm-4 control-label">Password </label>
+         <div class="col-sm-8">
+           <input class="md-input " type="password" name="password"  id="" placeholder="****"  required max-length="150">
+         </div>
+       </div>
+       <div class="form-group">
+         <label for="" class="col-sm-4 control-label">Password </label>
+         <div class="col-sm-8">
+           <input class="md-input " type="password" name="password2"  id="" placeholder="****"  required max-length="150">
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="col-sm-4 control-label">Photo </label>
+         <div class="form-file col-sm-8">
+           <input type="file" name="SuperUser" class="hm-inpt-b8">
+           <button class="btn btn-default">Upload New Photo</button>
+         </div>
+       </div>
+       <input class="md-input " type="hidden" name="role"  value="superuser"   required max-length="150">
+      <button md-ink-ripple=""  type="submit" class="md-btn md-raised indigo btn-block p-h-md">Submit</button>
+     </form>
+</div>
+
+<div class="p-v-lg text-center">
+  <a href="https://www.hilmacs.com" target="blank" class="m-b">www.hilmacs.com</a>
+ </div>
+	  </div>
+
+	</div>
+</div>

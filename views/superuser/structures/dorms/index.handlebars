@@ -1,0 +1,120 @@
+<title>Structures | Dorms </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- Content Navbar -->
+      <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 no-print hm-nav-bar-aside">
+  				<div class="col-sm-12">
+  				  <h5 class="no-margin m-b b">
+            Dormitries</h5>
+  				  <div class="list-group list-group-gap">
+  					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+  					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+  					</a>
+  					<a href="/settings/structures"  class="list-group-item md-whiteframe-z0">
+  					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-ov">   Overview </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+  					</a>
+            <a href="/settings/classes"  class="list-group-item md-whiteframe-z0">
+  					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-classes">   Manage Classes </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+  					</a>
+            <a href="/settings/subjects"  class="list-group-item md-whiteframe-z0">
+              <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-subjects">   Manage Subjects </span> <span class="mdi-navigation-chevron-left  pull-right"></span>
+            </a>
+            <a href="/settings/dorms"  class="list-group-item md-whiteframe-z0 bd-l-red">
+  					  <span class="glyphicon glyphicon-user pull-left"></span><span  class="margin-3 lc-nav-dorms">   Manage Dormitries </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+  					</a>
+  				  </div>
+  				</div>
+			  </div>
+			  <div class="col-md-8">
+          <div class="row">
+            <h5 class="text-left b">Dormitries / Student Apartments</h5>
+            <div class="panel panel-default ng-scope">
+               <div class="panel-heading">
+                 Dorms &amp; Apts
+               </div>
+               <div class="panel-body">
+                 <button type="button" class="btn btn-sm btn-success no-print" tabindex="0" data-toggle="modal" data-target="#hm-modal-d1">
+                   <i class="glyphicon glyphicon-plus">
+                   </i> Dormitry &amp; Apts
+                 </button>
+                 <button type="button" class="print btn btn-warning btn-sm" name="button">
+                   <i class="glyphicon glyphicon-print"> </i>
+
+                 </button>
+                 <div class="modal fade" id="hm-modal-d1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h4 class="modal-title" id="">Create new Dormitry </h4>
+                       </div>
+                       <div class="modal-body">
+                         <div class="form-group">
+                           <label for="">Dorm Name</label>
+                           <input type="text" class="form-control hm-inpt-modal-d1" id="" placeholder="">
+                         </div>
+                         <div class="form-group">
+                           <label for="">Dorm Captain</label>
+                           <input type="text" class="form-control hm-inpt-modal-d2" id="" placeholder="">
+                         </div>
+                         <div class="form-group">
+                           <label for="">Dorm Asst. Captain</label>
+                           <input type="text" class="form-control hm-inpt-modal-d3" id="" placeholder="">
+                         </div>
+                         <div class="form-group">
+                           <label for="">Dorm Warden</label>
+                           <input type="text" class="form-control hm-inpt-modal-d4" id="" placeholder="">
+                         </div>
+                         <div class="form-group">
+                           <label for="">Dorm / Apt Capacity <small>(number of students the apt can accomodate)</small></label>
+                           <input type="number" class="form-control hm-inpt-modal-d5" id="" placeholder="10">
+                         </div>
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary hm-btn-modal-d1" data-dismiss="modal">Save Dormitry</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <table class="table table-responsive table-bordered table-striped">
+                <thead>
+                <tr class="no-print">
+                  <th colspan="7">
+                    <input class="form-control ng-isolate-scope" placeholder="search for dorm" type="text">
+                  </th>
+                </tr>
+                <tr>
+                  <th>Dorm Name</th>
+                  <th>Dorm Captain</th>
+                  <th>Assistant Captain</th>
+                  <th>Warden</th>
+                  <th>Dorm Capacity</th>
+                  <th class="no-print">Delete</th>
+                </tr>
+                </thead>
+                <tbody class="hm-mv-dorms">
+                  &nbsp;
+                </tbody>
+              </table>
+             </div>
+          </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>

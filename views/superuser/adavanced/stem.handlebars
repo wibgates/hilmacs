@@ -1,0 +1,91 @@
+<title>Hilmacs Environment</title>
+<div class="app">
+     <div class="deep-purple-700 bg-big" id="hlmLoginApp_Container_" >
+   <div class="center-block w-xxl w-auto-xs p-v-md">
+   <div class="navbar">
+     <div class="navbar-brand m-t-lg text-center">
+     <span class="m-l inline">Hilmacs</span>
+     </div>
+   </div><br>
+  <div class="p-lg panel md-whiteframe-z1 text-color m animated fadeIn hm-int-state-bd">
+    <div class="m-b text-sm text-center text-bold ">
+        <strong>
+         <span class="hm-int-state-hd">
+           {{#if error}}
+               {{{error}}}
+           {{ else }}
+               Almost there..
+           {{/if}}
+         </span>
+      </strong>
+     </div>
+   <div class="hm-int-state-bd-2">
+     <form name="form" action="#" id="hm-int-state-2"  >
+         <div class="md-form-group float-label hm-int-state-2-bd">
+           <div class="form-group">
+             <label for="">School Type</label>
+             <select class="form-control hm-int-state-2" required>
+               <optgroup label="Local Schools">
+                 <optgroup label="Kindergaten / Elementary Level">
+                   <option value="LOC_AF_KIDS_A">Preschool Pre-kindergarten</option>
+                   <option value="LOC_AF_KIDS_B">kindergarten</option>
+                 </optgroup>
+                 <optgroup label="Primary Level">
+                   <option value="LOC_AF_PRIMARY" selected>Primary School</option>
+                 </optgroup>
+                 <optgroup label="Secondary Level">
+                   <option value="LOC_AF_SECONDARY_AB">Secondary 'Adavnced' &amp; 'Ordinary' Level School</option>
+                   <option value="LOC_AF_SECONDARY_A">Secondary 'Adavanced'  Level School</option>
+                   <option value="LOC_AF_SECONDARY_B">Secondary 'Ordinary' Level School</option>
+                 </optgroup>
+               </optgroup>
+               <optgroup label="International Schools">
+                 <optgroup label="Elementary school">
+                   <option value="INT_UK_ELM"> U.K Elementary Academic Standards</option>
+                   <option value="INT_US_ELM"> U.S.A Elementary Academic Standards</option>
+                   <option value="INT_IND_ELM"> INDIA Elementary Academic Standards</option>
+                   <option value="INT_CN_ELM"> CHINA Elementary Academic Standards</option>
+                 </optgroup>
+                 <optgroup label="Middle school">
+                   <option value="INT_UK_MIDDLE"> U.K Middle Academic Standards</option>
+                   <option value="INT_US_MIDDLE"> U.S.A Middle Academic Standards</option>
+                   <option value="INT_IND_MIDDLE"> INDIA Middle Academic Standards</option>
+                   <option value="INT_CN_MIDDLE"> CHINA Middle Academic Standards</option>
+                 </optgroup>
+                 <optgroup label="High school">
+                   <option value="INT_UK_HIGH"> U.K High School Academic Standards</option>
+                   <option value="INT_US_HIGH"> U.S.A High School  Academic Standards</option>
+                   <option value="INT_IND_HIGH"> INDIA High School  Academic Standards</option>
+                   <option value="INT_CN_HIGH"> CHINA High School  Academic Standards</option>
+                 </optgroup>
+                 <optgroup label="College / University school">
+                   <option value="INT_UK_COLLEGE"> U.K College Academic Standards</option>
+                   <option value="INT_US_COLLEGE"> U.S.A College Academic Standards</option>
+                   <option value="INT_IND_COLLEGE"> INDIA College Academic Standards</option>
+                   <option value="INT_CN_COLLEGE"> CHINA College Academic Standards</option>
+                 </optgroup>
+               </optgroup>
+             </select>
+           </div>
+           <div class="form-group">
+             <label for="">School Name</label>
+             <textarea type="text" class="form-control hm-int-state-3 hm-text-noresize" id="" placeholder="Hilmacs International Academy of Sciences" required rows="2" cols="20"></textarea>
+           </div>
+           <div class="form-group">
+             <label for="">Phone Number</label>
+             <input type="text" class="form-control hm-int-state-4" id="" placeholder="+44 3069 990726" required>
+           </div>
+         </div>
+         <button md-ink-ripple=""  type="submit" class="md-btn md-raised hm-fn-btn-2 indigo btn-block p-h-md ">Confirm</button>
+       </form>
+       </div>
+    </div>
+
+    <div class="p-v-lg text-center">
+      <a href="https://app.hilmacs.com/" target="_blank" class="m-b lc-sys-ft-r-key"></a>
+     </div>
+
+   </div>
+
+ </div>
+</div>

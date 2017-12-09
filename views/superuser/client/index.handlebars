@@ -1,0 +1,286 @@
+<title>Company Profile </title>
+<div  >
+  <div id="content" class="app-content ng-scope"  role="main" ui-view="content@"><div class="box ng-scope">
+		  <!-- hilmacs Content Navbar -->
+		  <div w3-include-html="/templates/navTop" class="hm-nav-bar-top">&nbsp;</div>
+		  <!-- Content -->
+		  <div class="box-row">
+			<div class="box-cell">
+			  <!-- uiView:  --><div class="box-inner padding ng-scope" ui-view="" id="view"><!-- uiView:  --><div ui-view="" class="ng-scope">
+		  <div class="row ng-scope">
+		     <div class="col-md-3 hm-nav-bar-aside">
+  				<div class="col-sm-12">
+  				  <h5 class="no-margin m-b b">
+            Section overview</h5>
+  				  <div class="list-group list-group-gap">
+  					<a href="/superuser" class="list-group-item md-whiteframe-z1">
+  					  <span class="mdi-action-home pull-left"></span><span  class="margin-3 lc-nav-home">  Home </span>
+  					</a>
+            <a href="/settings/company"  class="list-group-item md-whiteframe-z0 bd-l-red">
+  					  <span class="mdi-av-equalizer pull-left"></span><span  class="margin-3 lc-nav-cprofile">   Company Profile </span> <span class="mdi-toggle-radio-button-on text-danger pull-right"></span>
+  					</a>
+            <a href="/settings/exams"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-exam">   Examinations </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+            <a href="/settings/terms"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-av-my-library-books pull-left"></span><span  class="margin-3 lc-nav-terms">   Terms </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+            <a href="/settings/advanced"  class="list-group-item md-whiteframe-z0">
+              <span class="mdi-action-settings pull-left"></span><span  class="margin-3 lc-nav-adst">   Advanced Settings </span> <span class="mdi-navigation-chevron-left pull-right"></span>
+            </a>
+  				  </div>
+  				</div>
+			  </div>
+			  <div class="col-md-9 hm-c-1">
+          <span class="hm-data-a-auto-save save-ansyc hm-disp-off-5 pull-right ">
+              <button type="button" class="btn btn-success hm-data-a-auto-save-btn">
+                 <img class='img' src='/img/loaders/saving.png'> Tracking changes...
+              </button>
+          </span>
+           <div class="row">
+             <h5 class="text-left b">Company Profile Data </h5>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#" href="#">
+                          Company Legal Name
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                         <span class="hm-data-a1 b"><span class="text-center systemLabel"></span></span>
+                      </div>
+                      <div class="panel-footer">
+                         <button data-toggle="modal" data-target="#hm-modal-a1" type="button" class="btn btn-primary btn-md ">
+                           Update
+                         </button>
+                      </div>
+                    </div>
+                    <div class="modal fade " id="hm-modal-a1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="">Company Legal Name</h4>
+                          </div>
+                          <div class="modal-body">
+                             <textarea name="hm-inpt-modal-a1" class="form-control hm-text-noresize hm-inpt-modal-a1 b" rows="5" cols="30"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary hm-btn-modal-a1" data-dismiss="modal">Save Changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#" href="#">
+                          Company Legal Address
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                         <span class="hm-data-a2 b"><span class="text-center systemLocalAddress"></span></span>
+                      </div>
+                      <div class="panel-footer">
+                         <button data-toggle="modal" data-target="#hm-modal-a2" type="button" class="btn btn-primary btn-md ">
+                           Update
+                         </button>
+                      </div>
+                    </div>
+                    <div class="modal fade " id="hm-modal-a2" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="">Company Legal Address</h4>
+                          </div>
+                          <div class="modal-body">
+                             <textarea name="hm-inpt-modal-a2" class="form-control hm-text-noresize hm-inpt-modal-a2 b" rows="5" cols="30"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary hm-btn-modal-a2" data-dismiss="modal">Save Changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#" href="#">
+                          Company Official Slogan
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                         <span class="hm-data-a3 b"><span class="text-center systemcslogan"></span></span>
+                      </div>
+                      <div class="panel-footer">
+                         <button data-toggle="modal" data-target="#hm-modal-a3" type="button" class="btn btn-primary btn-md ">
+                           Update
+                         </button>
+                      </div>
+                    </div>
+                    <div class="modal fade " id="hm-modal-a3" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="">Company Official Slogan</h4>
+                          </div>
+                          <div class="modal-body">
+                             <textarea name="hm-inpt-modal-a3" class="form-control hm-text-noresize hm-inpt-modal-a3 b" rows="5" cols="30"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary hm-btn-modal-a3" data-dismiss="modal">Save Changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="panel-group" id="">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#" href="#">
+                          Company Official Registration Number
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                         <span class="hm-data-a4 b"><span class="text-center systemcsReg"></span></span>
+                      </div>
+                      <div class="panel-footer">
+                         <button data-toggle="modal" data-target="#hm-modal-a4" type="button" class="btn btn-primary btn-md ">
+                           Update
+                         </button>
+                      </div>
+                    </div>
+                    <div class="modal fade " id="hm-modal-a4" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="">Company Official Registration Number</h4>
+                          </div>
+                          <div class="modal-body">
+                             <textarea name="hm-inpt-modal-a4" class="form-control hm-text-noresize hm-inpt-modal-a4 b" rows="5" cols="30"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary hm-btn-modal-a4" data-dismiss="modal">Save Changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <span class="hm-disp-btn-settings"><button type="button" class="btn btn-default">
+             <i class="mdi-action-settings pull-left"></i> Advanced Settings<i class="mdi-navigation-unfold-more pull-right"></i>
+           </button></span>
+           <div class="row hm-disp-settings hm-disp-off">
+             <h5 class="text-left b">System Details</h5>
+             <div class="col-md-5">
+               <div class="panel-group" id="">
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#" href="#">
+                         <span class="">Online Server url</span>
+                       </a>
+                     </h4>
+                   </div>
+                   <div id="" class="panel-collapse collapse in">
+                     <div class="panel-body">
+                      <mark class="b">www.hilmacs.com/<span class="truckId">&nbsp;</span></mark>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-5">
+               <div class="panel-group" id="">
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#" href="#">
+                         Company Compay Type
+                       </a>
+                     </h4>
+                   </div>
+                   <div id="" class="panel-collapse collapse in">
+                     <div class="panel-body">
+                        <span class="hm-data-a5 b"><span class="text-center systemctype"></span></span>
+                     </div>
+                   </div>
+                   <div class="modal fade " id="hm-modal-a5" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                     <div class="modal-dialog modal-sm">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                           <h4 class="modal-title" id="">Company Type</h4>
+                         </div>
+                         <div class="modal-body">
+
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-5">
+               <div class="panel-group" id="">
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#" href="#">
+                         <span class="">Package Type</span>
+                       </a>
+                     </h4>
+                   </div>
+                   <div id="" class="panel-collapse collapse in">
+                     <div class="panel-body">
+                      <mark class="b">Gold</mark>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- / -->
+</div>
+</div>
